@@ -4,6 +4,12 @@ MRI-TET is a research codebase for deforming tetrahedral cardiac meshes from 3D 
 
 This repository is intended as paper/research code. It is not a packaged library; scripts are designed to be run from the repository root.
 
+## Demo
+
+<video src="assets/demo-video.mp4" controls width="100%"></video>
+
+[Open the demo video](assets/demo-video.mp4)
+
 ## Method Overview
 
 MRI-TET represents the heart as a tetrahedral mesh and renders the mesh into a soft occupancy volume. Training minimizes the mismatch between rendered occupancy and a target NIfTI label mask while regularizing tetrahedral validity and surface shape.
