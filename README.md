@@ -6,9 +6,19 @@ This repository is intended as paper/research code. It is not a packaged library
 
 ## Demo
 
-[![MRI-TET demo](assets/demo-preview.png)](assets/demo-video.mp4)
+### ACDC Result
 
-[Open the demo video](assets/demo-video.mp4)
+![ACDC result](assets/demo-acdc.gif)
+
+### Motion2011 Result
+
+![Motion2011 result](assets/demo-motion2011.gif)
+
+### Whole-Heart Result
+
+![Whole-heart result](assets/demo-wholeheart.gif)
+
+[Open the full-resolution demo video](assets/demo-video.mp4)
 
 ## Method Overview
 
