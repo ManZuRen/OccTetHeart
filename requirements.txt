@@ -1,0 +1,21 @@
+# StructuredField base requirements
+opencv-python
+joblib
+plyfile
+meshio
+tqdm
+nerfstudio
+git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+
+# MRI-TET medical-volume additions
+numpy
+pillow
+nibabel
+trimesh
+scipy
+matplotlib
+tensorboard
+scikit-image
+pyvista
+SimpleITK
+pydicom
