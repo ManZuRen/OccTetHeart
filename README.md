@@ -6,7 +6,7 @@ This repository is intended as paper/research code. It is not a packaged library
 
 ## Demo
 
-<video src="assets/demo-video.mp4" controls width="100%"></video>
+[![MRI-TET demo](assets/demo-preview.png)](assets/demo-video.mp4)
 
 [Open the demo video](assets/demo-video.mp4)
 
