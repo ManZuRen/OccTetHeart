@@ -213,7 +213,7 @@ def _analysis(results: list[dict]) -> dict:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch train MRI-TET on acdc_test labels. Each case directly calls "
+            "Batch train OccTetHeart on acdc_test labels. Each case directly calls "
             "train_tet_soft_volume_rebase_nvp.py with --template-msh, so the single-case "
             "training script performs template registration before training. Case-local .msh files are ignored."
         )

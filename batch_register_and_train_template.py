@@ -54,9 +54,9 @@ def discover_label_cases(data_root: Path, label_glob: str, requested_cases: Iter
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Register one prepared template tetra mesh to each NIfTI label, then train MRI-TET per case."
+        description="Register one prepared template tetra mesh to each NIfTI label, then train OccTetHeart per case."
     )
-    parser.add_argument("--template-msh", type=Path, required=True, help="Prepared template tetra mesh in MRI-TET training units.")
+    parser.add_argument("--template-msh", type=Path, required=True, help="Prepared template tetra mesh in OccTetHeart training units.")
     parser.add_argument("--data-root", type=Path, required=True, help="Root containing NIfTI label files.")
     parser.add_argument("--label-glob", default="**/*label.nii.gz", help="Glob below --data-root used to discover labels.")
     parser.add_argument("--output-root", type=Path, default=Path("./outputs/template_registered_batch"))

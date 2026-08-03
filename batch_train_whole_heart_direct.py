@@ -174,7 +174,7 @@ def _write_batch_summary(output_root: Path, data_root: Path, cases: list[dict], 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch direct MRI-TET training for whole_heart/pat*/ cases. Each case must contain one .nii/.nii.gz "
+            "Batch direct OccTetHeart training for whole_heart/pat*/ cases. Each case must contain one .nii/.nii.gz "
             "label and one corresponding .msh mesh. Meshes are centered like train_whole_heart_direct.py; no registration is used."
         )
     )

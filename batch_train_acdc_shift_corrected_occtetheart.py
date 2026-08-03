@@ -12,14 +12,14 @@ from pathlib import Path
 
 LABEL_SUFFIX = "_shift_corrected_sax_label.nii.gz"
 MESH_SUFFIX = "_label2_fullspace_icp_aligned.msh"
-CASE_SUMMARY_NAME = "mri_tet_case_summary.json"
-AGGREGATE_SUMMARY_NAME = "mri_tet_acdc_batch_summary.json"
+CASE_SUMMARY_NAME = "occtetheart_case_summary.json"
+AGGREGATE_SUMMARY_NAME = "occtetheart_acdc_batch_summary.json"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(
         description=(
-            "Batch-train MRI-TET on ACDC shift-corrected label folders. "
+            "Batch-train OccTetHeart on ACDC shift-corrected label folders. "
             "Each patient folder should contain *_shift_corrected_sax_label.nii.gz "
             "and matching *_label2_fullspace_icp_aligned.msh files."
         )
@@ -28,9 +28,9 @@ def parse_args():
     parser.add_argument(
         "--output-root",
         default=None,
-        help="Output root. Defaults to output/acdc_mri_tet_batch_<timestamp>.",
+        help="Output root. Defaults to output/acdc_occtetheart_batch_<timestamp>.",
     )
-    parser.add_argument("--train-script", default="train_tet_soft_volume_rebase_nvp.py", help="MRI-TET training script.")
+    parser.add_argument("--train-script", default="train_tet_soft_volume_rebase_nvp.py", help="OccTetHeart training script.")
     parser.add_argument("--python", default=sys.executable, help="Python executable used to launch each training job.")
     parser.add_argument("--label-value", type=int, default=2, help="Foreground label value for myocardium.")
     parser.add_argument("--iterations", type=int, default=2000, help="Optimization iterations per case.")
@@ -46,7 +46,7 @@ def parse_args():
         default=0.0,
         help=(
             "Explicit AABB expansion width in world units. The batch default is 0.0 to match the stable "
-            "single-case MRI-TET command and avoid the training script's auto-expanded boundary width."
+            "single-case OccTetHeart command and avoid the training script's auto-expanded boundary width."
         ),
     )
     parser.add_argument("--tetra-chunk-size", type=int, default=256, help="Tetrahedra processed per renderer block chunk.")
@@ -338,7 +338,7 @@ def main():
     if not data_root.exists():
         raise FileNotFoundError(f"--data-root does not exist: {data_root}")
 
-    output_root = Path(args.output_root) if args.output_root else repo_root / "output" / f"acdc_mri_tet_batch_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    output_root = Path(args.output_root) if args.output_root else repo_root / "output" / f"acdc_occtetheart_batch_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
     output_root = output_root.expanduser().resolve()
     output_root.mkdir(parents=True, exist_ok=True)
 

@@ -144,7 +144,7 @@ def _build_train_cmd(args: argparse.Namespace, centered_mesh: Path, label_nifti:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Direct MRI-TET training for D:/MRI-TET/whole_heart. The input mesh is in positive mm "
+            "Direct OccTetHeart training for whole-heart cases. The input mesh is in positive mm "
             "coordinates, so it is centered to the NIfTI training grid before calling the normal trainer."
         )
     )

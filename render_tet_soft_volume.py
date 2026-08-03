@@ -53,7 +53,7 @@ def parse_args():
 def main():
     args = parse_args()
     if not torch.cuda.is_available():
-        raise RuntimeError("render_tet_soft_volume.py currently requires CUDA because MRI-TET tetra processing is CUDA-oriented.")
+        raise RuntimeError("render_tet_soft_volume.py currently requires CUDA because OccTetHeart tetra processing is CUDA-oriented.")
     if args.tetra_chunk_size <= 0:
         raise ValueError("--tetra-chunk-size must be positive.")
     if min(args.block_size) <= 0:

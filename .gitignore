@@ -9,7 +9,7 @@ pred/
 patient*/
 runs/
 wandb/
-_publish_TetHeart_*/
+_publish_*/
 
 tiny-cuda-nn/
 submodules/**/build/

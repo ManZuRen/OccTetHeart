@@ -35,7 +35,7 @@ from eval_tet_mesh import evaluate_tetra_mesh_quality
 
 def parse_args():
     parser = ArgumentParser(
-        description="Train MRI-TET with per-tetra half-space 3D occupancy rendering and periodically bake the current NVP deformation into a new tetra mesh."
+        description="Train OccTetHeart with per-tetra half-space 3D occupancy rendering and periodically bake the current NVP deformation into a new tetra mesh."
     )
     parser.add_argument("--mesh", type=str, default=None, help=SUPPRESS)
     parser.add_argument("--template-msh", type=str, default=None, help="Template tetra mesh (.msh) to register to --label-nifti before training.")
@@ -540,7 +540,7 @@ def main():
     overall_start_time = time.perf_counter()
     args, pipe, opt = parse_args()
     if not torch.cuda.is_available():
-        raise RuntimeError("train_tet_soft_volume_rebase_nvp.py currently requires CUDA because MRI-TET model initialization uses CUDA tensors.")
+        raise RuntimeError("train_tet_soft_volume_rebase_nvp.py currently requires CUDA because OccTetHeart model initialization uses CUDA tensors.")
     torch.cuda.reset_peak_memory_stats()
     torch.cuda.synchronize()
     if args.tetra_chunk_size <= 0:

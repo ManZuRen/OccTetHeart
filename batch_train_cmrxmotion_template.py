@@ -118,7 +118,7 @@ def _build_cmd(args: argparse.Namespace, passthrough: list[str]) -> list[str]:
 def parse_args() -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser(
         description=(
-            "Batch train MRI-TET on CMRxMotion ED/ES labels by registering one prepared "
+            "Batch train OccTetHeart on CMRxMotion ED/ES labels by registering one prepared "
             "template tetra mesh to each label volume."
         )
     )

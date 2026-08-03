@@ -7,7 +7,7 @@ tqdm
 nerfstudio
 git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
 
-# MRI-TET medical-volume additions
+# OccTetHeart medical-volume additions
 numpy
 pillow
 nibabel
