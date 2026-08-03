@@ -6,9 +6,17 @@ This repository contains the research implementation accompanying the OccTetHear
 
 ## Results
 
-| ACDC | Motion2011 | Whole heart |
-| --- | --- | --- |
-| ![ACDC result](assets/demo-acdc.gif) | ![Motion2011 result](assets/demo-motion2011.gif) | ![Whole-heart result](assets/demo-wholeheart.gif) |
+### ACDC Result
+
+![ACDC result](assets/demo-acdc.gif)
+
+### Motion2011 Result
+
+![Motion2011 result](assets/demo-motion2011.gif)
+
+### Whole-Heart Result
+
+![Whole-heart result](assets/demo-wholeheart.gif)
 
 [View the full-resolution demo video](assets/demo-video.mp4)
 
