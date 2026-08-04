@@ -4,6 +4,28 @@ OccTetHeart reconstructs cardiac tetrahedral volume meshes from 3D segmentation 
 
 This repository contains the research implementation accompanying the OccTetHeart method. Run all commands from the repository root.
 
+## Framework
+
+<p align="center">
+  <img src="assets/framework1.png" alt="OccTetHeart framework" width="100%">
+</p>
+
+<p align="center">
+  <a href="assets/framework1.pdf">View the framework figure as PDF</a>
+</p>
+
+## Demo Video
+
+<p align="center">
+  <a href="https://github.com/ManZuRen/OccTetHeart/raw/refs/heads/main/assets/demo-video-latest.mp4">
+    <img src="assets/demo-video-latest-preview.jpg" alt="Watch the OccTetHeart demo video" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ManZuRen/OccTetHeart/raw/refs/heads/main/assets/demo-video-latest.mp4"><strong>▶ Play the full OccTetHeart demo (MP4, 2:27)</strong></a>
+</p>
+
 ## Results
 
 ### ACDC Result
@@ -17,8 +39,6 @@ This repository contains the research implementation accompanying the OccTetHear
 ### Whole-Heart Result
 
 ![Whole-heart result](assets/demo-wholeheart.gif)
-
-[View the full-resolution demo video](assets/demo-video.mp4)
 
 ## Method
 
